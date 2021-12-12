@@ -1,0 +1,36 @@
+html,
+body {
+  padding: 0;
+  margin: 0.5em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.center-width {
+  max-width: 60em;
+  margin: 0 auto;
+}
+
+.signup-form {
+  margin: 0.5em;
+  padding: 1em;
+}
+
+.signup-form > div {
+  background-color: whitesmoke;
+  border: 2px solid gray;
+  margin: 0.5em 0;
+  border-radius: 0.5em 0.2em;
+  padding: 0.5em;
+}
+
+.navbar-default > a {
+  padding: 0.5em;
+  border: 1.5px solid gray;
+  background-color: whitesmoke;
+  border-radius: 0.5em 0.2em;
+}

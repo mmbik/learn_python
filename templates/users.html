@@ -1,0 +1,25 @@
+{% extends 'theme.html'%} {%block bodyContent%}
+<br />
+<form action="/users" method="GET">
+  <div>
+    <input
+      value="{{ request.args.get('term') or '' }}"
+      type="text"
+      id="term"
+      name="term"
+      placeholder="Enter first name, last name, ..."
+    />
+    <button type="submit">search</button>
+  </div>
+</form>
+<h1>users</h1>
+{%for user in usersList %}
+<div>
+  <a href="/edit-user/{{ user._id }}" title="Edit"
+    >{{ user.firstName }} {{ user.lastName }}</a
+  >
+  <a href="/edit-password/{{ user._id }}" title="change password"
+    >-------- change password
+  </a>
+</div>
+{%endfor%} {%endblock%}
